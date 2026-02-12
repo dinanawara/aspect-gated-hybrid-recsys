@@ -20,7 +20,7 @@ Traditional recommender systems assume star ratings reflect true product prefere
 - **Seller/service issues** (returns, customer service)
 - **External factors** that don't reflect actual product quality
 
-Our approach **gates the penalty** — only applying it when:
+Our approach **gates the penalty**, only applying it when:
 1. CF and text signals disagree (ambiguous items)
 2. The item has high ratio of logistics/external complaints
 
@@ -117,7 +117,7 @@ gated_penalty = logistics_ratio * penalty_weight * is_ambiguous
 
 ### Why Gating Matters
 
-Without gating, penalizing all items with logistics complaints can hurt good products that happen to have some shipping issues. Gating focuses the penalty only where CF and text disagree — exactly where the logistics noise is most likely to cause ranking errors.
+Without gating, penalizing all items with logistics complaints can hurt good products that happen to have some shipping issues. Gating focuses the penalty only where CF and text disagree, exactly where the logistics noise is most likely to cause ranking errors.
 
 ## 📝 Key Findings
 
