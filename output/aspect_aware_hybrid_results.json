@@ -1,0 +1,52 @@
+{
+  "best_params": {
+    "alpha": 0.6,
+    "cf_rank_threshold": 50,
+    "text_rank_threshold": 150,
+    "penalty_weight": 0.3,
+    "ndcg@10": 0.1458
+  },
+  "final_results": {
+    "cf_only": {
+      "hr@5": 0.1295,
+      "hr@10": 0.1815,
+      "hr@20": 0.2511,
+      "ndcg@5": 0.1129,
+      "ndcg@10": 0.1304,
+      "ndcg@20": 0.1480,
+      "mrr": 0.1224
+    },
+    "baseline_text": {
+      "hr@5": 0.1494,
+      "hr@10": 0.2037,
+      "hr@20": 0.2770,
+      "ndcg@5": 0.1219,
+      "ndcg@10": 0.1405,
+      "ndcg@20": 0.1583,
+      "mrr": 0.1304
+    },
+    "aspect_aware": {
+      "hr@5": 0.1556,
+      "hr@10": 0.2105,
+      "hr@20": 0.2826,
+      "ndcg@5": 0.1233,
+      "ndcg@10": 0.1412,
+      "ndcg@20": 0.1590,
+      "mrr": 0.1301
+    }
+  },
+  "penalty_analysis": {
+    "total_candidates": 495645,
+    "ambiguous": 61812,
+    "ambiguous_pct": 12.47,
+    "penalized": 59744,
+    "penalized_pct": 12.05
+  },
+  "insights": {
+    "aspect_aware_improvement_over_cf": "+8.3% NDCG",
+    "aspect_aware_improvement_over_baseline_text": "+0.5% NDCG",
+    "logistics_ratio_mean": 0.018,
+    "logistics_ratio_max": 0.238,
+    "items_high_logistics": 7
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "experiment": "LLM-Gated Hybrid",
+  "llm_aspect_distribution": {
+    "product": 210207,
+    "external": 158,
+    "mixed": 26
+  },
+  "best_params": {
+    "alpha": 0.7,
+    "cf_thresh": 50,
+    "text_thresh": 150,
+    "penalty": 0.3,
+    "hr@10": 0.25325469774445525,
+    "ndcg@10": 0.20830707892112907,
+    "mrr": 0.20430717420624706
+  },
+  "test_metrics": {
+    "cf_only": {
+      "hr@10": 0.1815415503340967,
+      "ndcg@10": 0.13039422881218712,
+      "mrr": 0.12241134614910364
+    },
+    "baseline_text": {
+      "hr@10": 0.20372055086739654,
+      "ndcg@10": 0.14046604699704393,
+      "mrr": 0.13043975271060895
+    },
+    "heuristic_gated": {
+      "hr@10": 0.21046522571132792,
+      "ndcg@10": 0.141210485513084,
+      "mrr": 0.13009707659330005
+    },
+    "llm_gated": {
+      "hr@10": 0.2036891802867271,
+      "ndcg@10": 0.14044854854330496,
+      "mrr": 0.13043015151442192
+    }
+  },
+  "improvements": {
+    "baseline_text": 7.7241288027890525,
+    "heuristic_gated": 8.29504250259114,
+    "llm_gated": 7.710709149251953
+  },
+  "external_ratio_stats": {
+    "llm_mean": 0.0007704472230316735,
+    "llm_max": 0.01694915254237288,
+    "heuristic_mean": 0.01827871874862195,
+    "heuristic_max": 0.23783783783783785
+  },
+  "penalty_analysis": {
+    "sample_users": 100,
+    "total_candidates": 49566,
+    "ambiguous": 6218,
+    "ambiguous_pct": 12.54488964209337,
+    "penalized": 1615,
+    "penalized_pct": 3.2582818867772265
+  }
+}

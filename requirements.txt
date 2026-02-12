@@ -1,0 +1,27 @@
+# Core dependencies
+numpy>=1.24.0
+pandas>=2.0.0
+scipy>=1.10.0
+scikit-learn>=1.3.0
+tqdm>=4.65.0
+
+# Sentiment analysis (cheap pre-filter)
+vaderSentiment>=3.3.2
+textblob>=0.17.1
+
+# LLM clients
+openai>=1.0.0
+httpx>=0.25.0
+
+# Deep learning (for CF models)
+torch>=2.0.0
+
+# Visualization
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# Environment management
+python-dotenv>=1.0.0
+
+# Data loading
+orjson>=3.9.0
